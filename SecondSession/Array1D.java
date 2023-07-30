@@ -18,7 +18,7 @@ public class Array1D {
     }
 
     static void changes(int[] arr) {
-        arr[2] = 100; // Change the third element in the array.
+        arr[2] = 8; // Change the third element in the array.
     }
     static void swap(int[] arr, int index1, int index2) {
         int temp = arr[index1];
@@ -26,8 +26,8 @@ public class Array1D {
         arr[index2] = temp;
     }
     static int max(int[] arr) {
-        int max = arr[0];
-        for(int i = 1; i < 5; i++) {
+        int max = Integer.MIN_VALUE;
+        for(int i = 0; i < arr.length; i++) {
             if(arr[i] > max) {
                 max = arr[i];
             }

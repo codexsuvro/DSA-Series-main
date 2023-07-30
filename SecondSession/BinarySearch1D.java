@@ -6,6 +6,10 @@ public class BinarySearch1D {
         System.out.println(ans);
     }
     static int bs (int[] arr, int target) {
+        if (arr.length == 0) {
+            return -1;
+        }
+        
         int start = 0;
         int end = arr.length - 1;
 
